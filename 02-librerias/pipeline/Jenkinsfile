@@ -1,0 +1,6 @@
+@Library('jenkinslibrerias') _
+dockerPipeline(
+    dockerfilePath: "01-pipeline/Dockerfile",
+    dockerImage: "velazalejandro/pagina_futbol:1.0.0-${BUILD_ID}",
+    dockerContext: "01-pipeline"
+)

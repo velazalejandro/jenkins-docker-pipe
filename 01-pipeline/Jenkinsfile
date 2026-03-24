@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('docker build') {
+            steps {
+                script {
+                    sh "docker build -f 01-pipeline/Dockerfile -t velazalejandro/pagina_futbol:1.0.0-${BUILD_ID} 01-pipeline"
+                }
+            }
+        }
+        stage('docker push') {
+            steps {
+                script {
+                    sh "docker push velazalejandro/pagina_futbol:1.0.0-${BUILD_ID}"
+                }
+            }
+        }
+    }
+}

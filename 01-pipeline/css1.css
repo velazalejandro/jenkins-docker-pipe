@@ -1,0 +1,142 @@
+body{
+	background-image: url(estadiofutbol.jpg); /*incrustar una imagen en el body*/
+	background-attachment: fixed; /*la imagen será fija dentro de la pantalla*/
+	background-repeat: repeat; /*la imagen se repita o no*/
+	background-position: center; /*la posición de la imagen sea centrada*/
+}
+
+
+#header{ /* alinea el texto al centro del h1*/
+	background-color:blue; /*para rellenar de color el fondo*/
+	text-align:center; /*alinear al centro la letra*/
+	font-size:50px; /*para cambiar el tamaño de la letra*/
+	font-family: Cambria; /*poner un tipo de letra*/
+	color: brown; /*dar color al contenido del header*/
+	border-style: solid; /*dar estilo al borde*/
+	display: block; /*el elemento se comporte en bloque*/
+	margin-left:15px; /*margen izquierdo*/
+	margin-right:15px; /*margen derecho*/
+	
+}
+
+
+#nav{ /*da el tamaño y color a el menú*/
+	background-color:red;
+    float:left; /*el elemento flote a la izquierda*/
+	width: 100%; /*la anchura*/
+	padding: 20px; /*establece el espacio de relleno requerido por todos los lados de un elemento*/
+	font-weight: normal; /*peso normal de la fuente*/
+    text-transform: uppercase; /*especifica el cambio entre mayúsculas y minúsculas del texto de un elemento*/
+	box-sizing: content-box; /*comportamiento CSS por defecto para el tamaño de la caja*/
+	display: block;
+	
+	
+}
+
+a:visited{color: yellow;}
+				a:active{color: blue;} 
+				a:link{color: yellow;}
+				a:hover{color: black;}
+
+.menuA{
+     float:left;
+     list-style-type:none; /*para que la lista no tenga simbolos*/
+     margin-left:70px;
+}
+
+
+
+.menuB{
+	float:left;
+	list-style-type:none;
+	margin-left:70px;
+}
+
+
+
+.menuC{
+	float:left;
+	list-style-type:none;
+	margin-left:70px;
+}
+
+
+.menuD{
+	float:left;
+	list-style-type:none;
+	margin-left:70px;
+}
+
+
+
+#section{
+	background-color:yellow;
+	float:right;
+	clear:both; /* el elemento es movido hacia abajo para limpiar tanto elementos flotantes de la izquierda como de la derecha*/
+	font-family: Calibri;
+	font-size: 20px;
+	padding:50px;
+	width:25%;
+	
+	
+}
+
+#aside{
+	float:center;
+	background-color:green;
+	font-family: Cambria;
+	font-size: 30px;
+	
+}
+
+
+fieldset{
+	background-color:grey;
+	clear:both;
+	text-align: center;
+	font-family: Georgia;
+}
+
+
+ul.uno {
+	list-style-type: square;
+	font-size: 30px;
+}
+
+#footer{
+	background-color:blue;
+	padding:25px;
+	float: center;
+	clear:both;
+	text-align: center;
+	color: brown;
+}
+
+table {
+	width:60%;
+	border-collapse: collapse;
+	margin: auto;
+	border: double;
+	float: right;
+}
+				
+				
+td {
+	text-align:center;
+	font-family: calibri;
+	border: 2px solid black;
+	border: double;
+}
+				
+				
+tr:first-child {
+	color: white;
+	background-color: black;
+}
+
+tr:nth-child(1n+2) {
+	color: white;
+	background-color: red;
+	opacity: 0.6;
+	border: double;
+}
