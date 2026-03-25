@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('docker build') {
             steps {
-                sh "docker build -t velazalejandro/pagina_futbol:1.0.0-${BUILD_ID} ."
+                sh "docker build -t velazalejandro/pagina_futbol:1.0.0-${env.BUILD_ID} ."
                 }
             }
 
@@ -18,7 +18,7 @@ pipeline {
        
         stage('docker push') {
             steps {
-               sh "docker push velazalejandro/pagina_futbol:1.0.0-${BUILD_ID}"
+               sh "docker push velazalejandro/pagina_futbol:1.0.0-${env.BUILD_ID}"
             }
         }
      }
