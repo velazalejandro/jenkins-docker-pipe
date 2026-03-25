@@ -4,17 +4,22 @@ pipeline {
     stages {
         stage('docker build') {
             steps {
-                script {
-                    sh "docker build -f 01-pipeline/Dockerfile -t velazalejandro/pagina_futbol:1.0.0-${BUILD_ID} 01-pipeline"
+                sh "docker build -t velazalejandro/pagina_futbol:1.0.0-${BUILD_ID} ."
                 }
             }
-        }
+
+	stage('docker login') {
+            steps {
+		withCredentials([usernamePassword(credentialsId: 'dockerhub', usernameVariable: 'USER', passwordVariable: 'PASS')]) {
+		    sh 'echo $PASS | docker login -u $USER --password-stdin'
+		}
+            }
+	}
+       
         stage('docker push') {
             steps {
-                script {
-                    sh "docker push velazalejandro/pagina_futbol:1.0.0-${BUILD_ID}"
-                }
+               sh "docker push velazalejandro/pagina_futbol:1.0.0-${BUILD_ID}"
             }
         }
-    }
-}
+     }
+ }
