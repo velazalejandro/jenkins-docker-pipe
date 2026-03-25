@@ -4,9 +4,11 @@ pipeline {
     stages {
         stage('docker build') {
             steps {
+              dir('01-pipeline') {
                 sh "docker build -t velazalejandro/pagina_futbol:1.0.0-${env.BUILD_ID} ."
                 }
             }   
+        }
          stage('docker push') {
             steps {
                sh "docker push velazalejandro/pagina_futbol:1.0.0-${env.BUILD_ID}"
