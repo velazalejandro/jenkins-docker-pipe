@@ -5,7 +5,7 @@ pipeline {
         stage('docker build') {
             steps {
               dir('01-pipeline') {
-                sh "docker build -t velazalejandro/pagina_futbol:1.0.0-${env.BUILD_ID} ."
+                bat "docker build -t velazalejandro/pagina_futbol:1.0.0-${env.BUILD_ID} ."
                 }
             }   
         }
@@ -13,13 +13,13 @@ pipeline {
         stage('docker login') {
             steps {
 		withCredentials([usernamePassword(credentialsId: 'dockerhub', usernameVariable: 'USER', passwordVariable: 'PASS')]) {
-		    sh 'echo $PASS | docker login -u $USER --password-stdin'
+		    bat 'echo $PASS | docker login -u $USER --password-stdin'
 		}
     }
 }
          stage('docker push') {
             steps {
-               sh "docker push velazalejandro/pagina_futbol:1.0.0-${env.BUILD_ID}"
+               bat "docker push velazalejandro/pagina_futbol:1.0.0-${env.BUILD_ID}"
             }
         }
      }
