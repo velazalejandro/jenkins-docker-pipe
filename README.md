@@ -6,11 +6,19 @@ CI/CD con Jenkins + Docker / Dockerhub + GitHub
 ## Descripción
 He desarrollado un pipeline combinando Jenkins + Docker + GitHub donde Jenkins automatiza la construcción, dockerización y despliegue de una aplicación web, desde la integración del código hasta su despliegue en contenedores Docker, incluyendo gestión de credenciales y versionado de imágenes, simulando un entorno real de integración continua.
 
+## Objetivos
+- Automatizar el ciclo de build
+- Empaquetar la aplicación en una imagen Docker
+- Publicar imagen versionada
+- Simular un flujo real de integración continua
+
+## Arquitectura
+GitHub → Jenkins → Docker Build → Docker Hub → Despliegue local
 
 ## 🛠️ Tecnologías utilizadas
 -	GitHub para la creación de token, repositorio jenkins-docker-pipe para almacenar la estructura de carpetas y los archivos de configuración.
 -	Jenkins versión 2.541.3 para configurar credenciales y crear el job pipeline.
--	Docker Desktop / Dockerhub para constuir imagen y crear token de acceso.
+-	Docker / Dockerhub para constuir imagen y crear token de acceso.
 -	CMD o PowerShell para la ejecución de comandos.
 -	Notepad para la creación de Dockerfile y Jenkinsfile.
 
@@ -79,7 +87,7 @@ Después ejecutamos el comando de docker push.
 
 
 
-# PASOS PARA EL DESPLIEGUE EN JENKINS:
+## Pasos para la configuración y el despliegue en Jenkins
 
 5.	Nos situamos en el menú principal de Jenkins – Seleccionamos Nueva Tarea
 
