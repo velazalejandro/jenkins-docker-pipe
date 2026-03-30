@@ -24,9 +24,10 @@ pipeline {
 	 }
 }
 	
-		  stage('deploy') {
+		stage('deploy') {
             steps {
-               bat "docker run -d --paginafutbol app -p 3000:3000 $pagina_futbol:1.0.0-"
-          }
-      }
- }
+                bat "docker run -d -p 3000:3000 velazalejandro/pagina_futbol:1.0.0-${env.BUILD_ID}"
+            }
+        }
+    }
+}
