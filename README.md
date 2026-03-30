@@ -111,7 +111,8 @@ En la pestaña de Builds nos aparece la ejecución en progreso.
 
 Finalmente ha funcionado la pipeline correctamente con todos los pasos realizados: docker build, docker login y docker push.
 
-<img width="817" height="244" alt="image" src="https://github.com/user-attachments/assets/1f2bfe45-da79-4032-9ee7-9ec5e983a990" />
+<img width="1336" height="403" alt="image" src="https://github.com/user-attachments/assets/9dbf8273-ed5c-44cf-a0e4-5071d09a2a35" />
+
 
 ## Licencia 📄
 Bajo licencia GNU General Public License v3.0
