@@ -27,8 +27,8 @@ pipeline {
 
         stage('deploy') {
             steps {
-                bat "docker stop pagina_futbol || exit 0"
-                bat "docker rm pagina_futbol || exit 0"
+                bat "docker stop pagina_futbol || true"
+                bat "docker rm pagina_futbol || true"
                 bat "docker run -d -p 3001:3000 --name pagina_futbol velazalejandro/pagina_futbol:1.0.0-${env.BUILD_ID}"
             }
         }
