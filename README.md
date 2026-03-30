@@ -4,7 +4,8 @@
 CI/CD con Jenkins + Docker / Dockerhub + GitHub
 
 ## Descripción
-He desarrollado un pipeline combinando Jenkins + Docker + GitHub donde Jenkins automatiza la construcción, dockerización y despliegue de una aplicación web, simulando un entorno real de integración continua.
+He desarrollado un pipeline combinando Jenkins + Docker + GitHub donde Jenkins automatiza la construcción, dockerización y despliegue de una aplicación web, desde la integración del código hasta su despliegue en contenedores Docker, incluyendo gestión de credenciales y versionado de imágenes, simulando un entorno real de integración continua.
+
 
 ## 🛠️ Tecnologías utilizadas
 -	GitHub para la creación de token, repositorio jenkins-docker-pipe para almacenar la estructura de carpetas y los archivos de configuración.
