@@ -26,8 +26,9 @@ Pipeline declarativa SCM -> Docker Build -> Docker Login -> Docker Push -> Deplo
 
 - Pipeline declarativa SCM: Definición de CI/CD escrita en Jenkinsfile (sintaxis declarativa) que se almacena y versiona en un sistema de control de versiones (git). Permite a Jenkins descargar automáticamente el script desde el repositorio antes de ejecutar las etapas de construcción, pruebas y despliegue.
 
-- Docker Build:
-- Docker Login
+- Docker Build: Se encarga de crear imágenes de Docker partiendo de un «contexto» y de un archivo de Dockerfile.
+  
+- Docker Login:
 - Docker Push:
 - Deploy: 
 
