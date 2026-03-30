@@ -32,7 +32,7 @@ Pipeline declarativa SCM -> Docker Build -> Docker Login -> Docker Push -> Deplo
   
 - Docker Push: Comando utilizado para subir imágenes de Docker desde el entorno local a un registro remoto (como Docker Hub, Amazon ECR o un registro privado). Permite compartir imágenes etiquetadas y versionadas, asegurando que estén disponibles para su despliegue. Es esencial iniciar sesión y etiquetar la imagen correctamente.
   
-- Deploy: 
+- Deploy: Proceso de tomar la aplicación, empaquetarla junto con todas sus dependencias en un contenedor y ponerla en funcionamiento en un entorno productivo, de prueba o de desarrollo.
 
 ## 🛠️ Tecnologías utilizadas
 -	GitHub para la creación de token, repositorio jenkins-docker-pipe para almacenar la estructura de carpetas y los archivos de configuración.
