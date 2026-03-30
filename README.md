@@ -21,6 +21,16 @@ GitHub → Jenkins → Docker Build → Docker Hub → Despliegue local
 - Docker Hub → registro de imágenes
 - Servidor / contenedor local → despliegue
 
+## Flujo de la pipeline:
+Pipeline declarativa SCM -> Docker Build -> Docker Login -> Docker Push -> Deploy
+
+- Pipeline declarativa SCM: Definición de CI/CD escrita en Jenkinsfile (sintaxis declarativa) que se almacena y versiona en un sistema de control de versiones (git). Permite a Jenkins descargar automáticamente el script desde el repositorio antes de ejecutar las etapas de construcción, pruebas y despliegue.
+
+- Docker Build:
+- Docker Login
+- Docker Push:
+- Deploy: 
+
 ## 🛠️ Tecnologías utilizadas
 -	GitHub para la creación de token, repositorio jenkins-docker-pipe para almacenar la estructura de carpetas y los archivos de configuración.
 -	Jenkins versión 2.541.3 para configurar credenciales y crear el job pipeline.
@@ -28,7 +38,7 @@ GitHub → Jenkins → Docker Build → Docker Hub → Despliegue local
 -	CMD o PowerShell para la ejecución de comandos.
 -	Notepad para la creación de Dockerfile y Jenkinsfile.
 
-## Estructura
+## Estructura del directorio
 01-pipeline: 
 - carpeta "src" --> contiene imágenes de la pagina
 - paginafutbol.html --> nuestra página web creada
