@@ -15,11 +15,11 @@ He desarrollado un pipeline combinando Jenkins + Docker + GitHub donde Jenkins a
 ## Arquitectura
 GitHub → Jenkins → Docker Build → Docker Hub → Despliegue local
 
-GitHub → fuente del código
-Jenkins → orquestación CI/CD
-Docker → empaquetado
-Docker Hub → registro de imágenes
-Servidor / contenedor local → despliegue
+- GitHub → fuente del código
+- Jenkins → orquestación CI/CD
+- Docker → empaquetado
+- Docker Hub → registro de imágenes
+- Servidor / contenedor local → despliegue
 
 ## 🛠️ Tecnologías utilizadas
 -	GitHub para la creación de token, repositorio jenkins-docker-pipe para almacenar la estructura de carpetas y los archivos de configuración.
@@ -36,7 +36,7 @@ Servidor / contenedor local → despliegue
 - Jenkinsfile --> para desplegar pipeline de la aplicación
 
 
-## Pruebas ⚙️ y Despliegues 📦
+## Ejecuciones paso a paso - Pruebas ⚙️ y Despliegues 📦
 1. Creamos el DockerFile y el Jenkinsfile.
 2. Asegurarnos que Jenkins tiene Docker instalado. Instalamos plugins de Docker en Jenkins. Para ello seguimos la siguiente ruta:
 Panel de Control – Administrar Jenkins – System Configuration – Plugins – Available plugins – Escribimos docker – Seleccionamos los 4 primeros plugins y los instalamos.
