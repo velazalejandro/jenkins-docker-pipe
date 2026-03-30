@@ -15,10 +15,10 @@ He desarrollado un pipeline combinando Jenkins + Docker + GitHub donde Jenkins a
 -	Notepad para la creación de Dockerfile y Jenkinsfile.
 
 ## Estructura
-01-pipeline: carpeta "src" --> contiene imágenes de la pagina
-                      paginafutbol.html --> nuestra página web creada
-                      Dockerfile --> para dockerizar y contruir nuestra imagen
-                      Jenkinsfile --> para desplegar pipeline de la aplicación
+01-pipeline: - carpeta "src" --> contiene imágenes de la pagina
+             - paginafutbol.html --> nuestra página web creada
+             - Dockerfile --> para dockerizar y contruir nuestra imagen
+             - Jenkinsfile --> para desplegar pipeline de la aplicación
 
 
 ## Pruebas ⚙️ y Despliegues 📦
