@@ -28,7 +28,8 @@ Pipeline declarativa SCM -> Docker Build -> Docker Login -> Docker Push -> Deplo
 
 - Docker Build: Se encarga de crear imágenes de Docker partiendo de un «contexto» y de un archivo de Dockerfile.
   
-- Docker Login:
+- Docker Login: Comando de la interfaz de línea de comandos (CLI) de Docker utilizado para autenticarse en un registro de imágenes (como Docker Hub), permitiendo guardar credenciales de forma segura. Es esencial para descargar (pull) imágenes privadas o subir (push) imágenes propias.
+  
 - Docker Push:
 - Deploy: 
 
