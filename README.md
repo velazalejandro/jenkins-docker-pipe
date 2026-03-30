@@ -30,7 +30,8 @@ Pipeline declarativa SCM -> Docker Build -> Docker Login -> Docker Push -> Deplo
   
 - Docker Login: Comando de la interfaz de línea de comandos (CLI) de Docker utilizado para autenticarse en un registro de imágenes (como Docker Hub), permitiendo guardar credenciales de forma segura. Es esencial para descargar (pull) imágenes privadas o subir (push) imágenes propias.
   
-- Docker Push:
+- Docker Push: Comando utilizado para subir imágenes de Docker desde el entorno local a un registro remoto (como Docker Hub, Amazon ECR o un registro privado). Permite compartir imágenes etiquetadas y versionadas, asegurando que estén disponibles para su despliegue. Es esencial iniciar sesión y etiquetar la imagen correctamente.
+  
 - Deploy: 
 
 ## 🛠️ Tecnologías utilizadas
