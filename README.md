@@ -139,7 +139,8 @@ En la pestaña de Builds nos aparece la ejecución en progreso.
 
 Finalmente ha funcionado la pipeline correctamente con todos los pasos realizados: CSM, Docker Build, Docker Login, Docker Push y Deploy.
 
-<img width="1336" height="403" alt="image" src="https://github.com/user-attachments/assets/9dbf8273-ed5c-44cf-a0e4-5071d09a2a35" />
+<img width="1335" height="426" alt="image" src="https://github.com/user-attachments/assets/304feb76-86d5-4891-8380-43d08293850a" />
+
 
 
 ## Licencia 📄
