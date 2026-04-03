@@ -34,4 +34,14 @@ pipeline {
         }
 
     }
+
+        post {
+        success {
+            echo 'Despliegue completado con éxito!'
+        }
+        failure {
+            echo 'La pipeline falló. Revisa los logs.'
+        }
+     }
+  }
 }
