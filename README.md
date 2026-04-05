@@ -22,7 +22,7 @@ GitHub → Jenkins → Docker Build → Docker Hub → Despliegue local
 - Servidor / contenedor local → despliegue
 
 ## Flujo de la pipeline:
-Pipeline declarativa SCM -> Docker Build -> Docker Login -> Docker Push -> Deploy
+Pipeline declarativa SCM -> Docker Build -> Docker Login -> Docker Push -> Deploy -> Declarative Post Actions
 
 - Pipeline declarativa SCM: Definición de CI/CD escrita en Jenkinsfile (sintaxis declarativa) que se almacena y versiona en un sistema de control de versiones (git). Permite a Jenkins descargar automáticamente el script desde el repositorio antes de ejecutar las etapas de construcción, pruebas y despliegue.
 
@@ -33,6 +33,8 @@ Pipeline declarativa SCM -> Docker Build -> Docker Login -> Docker Push -> Deplo
 - Docker Push: Comando utilizado para subir imágenes de Docker desde el entorno local a un registro remoto (como Docker Hub, Amazon ECR o un registro privado). Permite compartir imágenes etiquetadas y versionadas, asegurando que estén disponibles para su despliegue. Es esencial iniciar sesión y etiquetar la imagen correctamente.
   
 - Deploy: Proceso de tomar la aplicación, empaquetarla junto con todas sus dependencias en un contenedor y ponerla en funcionamiento en un entorno productivo, de prueba o de desarrollo.
+
+- Declarative Post Actions: 
 
 ## 🛠️ Tecnologías utilizadas
 -	GitHub para la creación de token, repositorio jenkins-docker-pipe para almacenar la estructura de carpetas y los archivos de configuración.
@@ -137,7 +139,8 @@ En la pestaña de Builds nos aparece la ejecución en progreso.
 
 <img width="339" height="531" alt="image" src="https://github.com/user-attachments/assets/ba214120-5a69-4b66-b623-d7a51ccfb5ae" />
 
-Finalmente ha funcionado la pipeline correctamente con todos los pasos realizados: CSM, Docker Build, Docker Login, Docker Push y Deploy.
+Finalmente ha funcionado la pipeline correctamente con todos los pasos realizados: CSM, Docker Build, Docker Login, Docker Push, Deploy y 
+Declarative Post Actions.
 
 <img width="1335" height="426" alt="image" src="https://github.com/user-attachments/assets/304feb76-86d5-4891-8380-43d08293850a" />
 
