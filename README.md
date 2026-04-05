@@ -34,7 +34,7 @@ Pipeline declarativa SCM -> Docker Build -> Docker Login -> Docker Push -> Deplo
   
 - Deploy: Proceso de tomar la aplicación, empaquetarla junto con todas sus dependencias en un contenedor y ponerla en funcionamiento en un entorno productivo, de prueba o de desarrollo.
 
-- Declarative Post Actions: 
+- Declarative Post Actions: bloques de código en un  que se ejecutan automáticamente después de que finalizan todas las etapas (stages) principales del pipeline. Permiten gestionar tareas finales como notificaciones basados en el resultado final (éxito, fallo o inestabilidad). 
 
 ## 🛠️ Tecnologías utilizadas
 -	GitHub para la creación de token, repositorio jenkins-docker-pipe para almacenar la estructura de carpetas y los archivos de configuración.
